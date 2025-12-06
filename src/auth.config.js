@@ -56,7 +56,7 @@ export const googleStrategy = new GoogleStrategy(
   {
     clientID: process.env.PASSPORT_GOOGLE_CLIENT_ID,
     clientSecret: process.env.PASSPORT_GOOGLE_CLIENT_SECRET,
-    callbackURL: "/oauth2/callback/google", 
+    callbackURL: "http://umc.r-e.kr/oauth2/callback/google", 
     scope: ["email", "profile"],
   },
 
