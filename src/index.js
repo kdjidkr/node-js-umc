@@ -96,6 +96,7 @@ app.get('/', (req, res) => {
 app.get("/oauth2/login/google",
   passport.authenticate("google", {
     session: false,
+    scope: ["email", "profile"],
   })
 );
 
