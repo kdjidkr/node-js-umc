@@ -145,7 +145,7 @@ app.get("/openapi.json", async (req, res, next) => {
       description: "UMC 9th Node.js 프로젝트 API 문서입니다.",
       version: "1.0.0",
     },
-    host: "localhost:3000",
+    host: "43.202.46.37:3000",
     schemes: ["http"],
   };
   const result = await swaggerAutogen(options)(outputFile, routes, doc);
